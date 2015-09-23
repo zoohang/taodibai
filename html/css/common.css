@@ -84,7 +84,7 @@ li{list-style: none;}
 	float: right;
 }
 .nav-order span{
-	padding: 10px 2px;
+	padding: 12px 2px;
     display: block;
     float: left;
 }
@@ -167,7 +167,7 @@ li{list-style: none;}
 }
 .right-side{
 	width: 70px;
-	height: 420px;
+	height: 418px;
 	background-color: #fff;
 	position: fixed;
 	left: 95%;
@@ -251,11 +251,56 @@ li{list-style: none;}
 .J_jian{border-width:1px 0 1px 1px;border-radius:3px 0 0 3px;}  
 .J_jia{border-width:1px 1px 1px 0;border-radius:0 3px 3px 0;}
 .history-list{
-	display: block;
+	display: none;
+	height: 341px;
+  overflow: auto;
+}
+.history-row{
+	margin-bottom: 10px;
+}
+.history-row p{
+	text-align: left;
+	padding: 1px 5px;
 }
 .history-time{
-	color: ;
-	font-family: ;
-	font-size: ;
+	color: red;
+	margin-left: 5px;
+}
+.rs-bar{
+	display: none;
 	text-align: left;
+	max-height: 272px;
+	overflow: auto;
+}
+.rs-bar h3{
+	font-family: 黑体;
+	color: red;
+	padding: 15px 15px 5px 15px;
+}
+.rs-bar p{
+	padding: 10px;
+	line-height: 22px;
+}
+.jianyilan{
+	display: none;
+}
+.jianyilan textarea{
+	  width: 229px;
+    height: 142px;
+    overflow: hidden;
+    margin: 5px;
+}
+.jianyilan .jianyilan-btm{
+	overflow: hidden;
+}
+.jianyilan-btm h3{
+	float: left;
+	color: red;
+	padding: 5px 10px;
+	font-size: 14px;
+	font-family: 微软雅黑;
+}
+.jianyilan-btm input{
+	float: right;
+	margin: 10px;
 }

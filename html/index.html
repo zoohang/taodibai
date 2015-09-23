@@ -175,6 +175,30 @@
 					<p>小飞燕红油香辣干<span>3.50 × 1</span></p>
 					<p>小飞燕红油香辣干<span>3.50 × 1</span></p>
 				</div>
+				<div class="history-row">
+					<p class="history-time">2045.8.9</p>
+					<p>小飞燕红油香辣干<span>3.50 × 1</span></p>
+					<p>小飞燕红油香辣干<span>3.50 × 1</span></p>
+					<p>小飞燕红油香辣干<span>3.50 × 1</span></p>
+				</div>
+				<div class="history-row">
+					<p class="history-time">2045.8.9</p>
+					<p>小飞燕红油香辣干<span>3.50 × 1</span></p>
+					<p>小飞燕红油香辣干<span>3.50 × 1</span></p>
+					<p>小飞燕红油香辣干<span>3.50 × 1</span></p>
+				</div>
+				<div class="history-row">
+					<p class="history-time">2045.8.9</p>
+					<p>小飞燕红油香辣干<span>3.50 × 1</span></p>
+					<p>小飞燕红油香辣干<span>3.50 × 1</span></p>
+					<p>小飞燕红油香辣干<span>3.50 × 1</span></p>
+				</div>
+				<div class="history-row">
+					<p class="history-time">2045.8.9</p>
+					<p>小飞燕红油香辣干<span>3.50 × 1</span></p>
+					<p>小飞燕红油香辣干<span>3.50 × 1</span></p>
+					<p>小飞燕红油香辣干<span>3.50 × 1</span></p>
+				</div>
 			</div>
 		</div>
 		<div class="side-row">
@@ -182,14 +206,25 @@
 				<img src="./images/index_22.png" alt="">
 				<p>公告栏</p>
 			</a>
-			<div class="side-box rs-bar"></div>
+			<div class="side-box rs-bar">
+				<h3>今日优惠：</h3>
+				<p>淘迪拜网站今天测试淘迪拜网站今天测试淘迪拜网站今天测试淘迪拜网站今天测试淘迪拜网站今天测试淘迪拜网站今天测试淘迪拜网站今天测试淘迪拜网站今天测试</p>
+			</div>
 		</div>
 		<div class="side-row">
 			<a href="javascript:;">
 				<img src="./images/index_25.png" alt="">
 				<p>建议栏</p>
 			</a>
-			<div class="side-box jianyilan"></div>
+			<div class="side-box jianyilan">
+				<textarea name="jianyilan">
+					
+				</textarea>
+				<div class="jianyilan-btm">
+					<h3>限300字内</h3>
+					<input type="submit" value="发布">
+				</div>
+			</div>
 		</div>
 		<div class="side-row">
 			<a href="javascript:;">
@@ -313,6 +348,15 @@
 	</div>
 	<!--底部结束-->
 	<script type="text/javascript">
+		$('.side-row a').click(function() {
+			var zilanmu =  $(this).parent().children('.side-box');
+			if(zilanmu.css('display') == 'none'){
+				$('.side-box').hide();
+				zilanmu.show();
+			}else{
+				zilanmu.hide();
+			}
+		});
 		//回到顶部
 		function pageScroll(){
 			window.scrollBy(0,-100); 
