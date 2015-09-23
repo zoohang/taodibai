@@ -1,0 +1,261 @@
+@charset "utf-8";
+body,ul,div,p,h1,h2,h3,h4,h5,h6{margin: 0;padding: 0;}
+a,a:hover,a:active,a:visited{text-decoration: none;color: #563d7c;}
+
+li{list-style: none;}
+.top{
+	width: 100%;
+	overflow: hidden;
+}
+.top .top-body{
+	width: 1110px;
+	height: 95px;
+	margin: 0 auto;
+}
+.top .top-body .top-left{
+	float: left;
+	width: 686px;
+}
+.top .top-body .top-right{
+	float: left;
+	width: 424px;
+}
+.top-login{
+	margin: 10px 0 0 0;
+	float: right;
+}
+.top-login li{
+	float: left;
+	margin: 6px;
+}
+.top-right-login{
+	height: 40px;
+}
+.top-right-search{
+	float: right;
+    width: 100%;	
+}
+.top-right-search input{
+	float: right;
+	width: 320px;
+	height: 32px;
+	font-size: 18px;
+    padding: 0 30px 0 10px;
+}
+.top-right-search img{
+	position: relative;
+    left: 92%;
+    top: 8px;
+}
+.nav{
+	overflow: hidden;
+	width: 100%;
+	height: 43px;
+	background-color: #DA1010;
+}
+.nav-col{
+	overflow: hidden;
+	width: 1110px;
+	height: auto;
+	margin: 0 auto;
+}
+.nav-list{
+	float: left;
+}
+.nav-list ul{
+	overflow: hidden;
+}
+.nav-list ul li{
+	float: left;
+	padding: 10px 15px;
+}
+.nav-list ul li.on{
+	background-color: #AB0809;
+}
+.nav-list ul li a{
+	color: #fff;
+	font-family: 黑体;
+	font-size: 20px;
+}
+.nav-list ul li:hover{
+	background-color: #AB0809;
+}
+.nav-order{
+	float: right;
+}
+.nav-order span{
+	padding: 10px 2px;
+    display: block;
+    float: left;
+}
+.nav-order span a {
+	color: #fff;
+	font-size: 15px;
+    font-family: 黑体;
+}
+.main{
+	width: 100%;
+	background-color: #E6E6E6;
+}
+.main-list{
+	width: 1110px;
+	overflow: hidden;
+	margin: 0 auto;
+	background-color: 
+}
+.list-row{
+	width: 1120px;
+	overflow: hidden;
+}
+.main-list .list-row .row-goods{
+	float: left;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+.index-ad{
+	padding: 10px 0 0;
+}
+.footer{
+	width: 100%;
+	height: 138px;
+	background-color: #2A2A2A;
+}
+.footer .foot-main{
+	width: 1110px;
+	height: 138px;
+	margin: 0 auto;
+	position: relative;
+}
+.foot-main-left{
+	width: 197px;
+	position: absolute;
+	top: 25%;
+}
+.foot-main-center{
+	position: absolute;
+	left: 25%;
+	top: 43%;
+}
+.foot-main-center ul li{
+	float: left;
+	padding: 0 10px;
+}
+.foot-main-center ul li a{
+	color: #fff;
+	font-family: 黑体;
+	font-size: 15px;
+}
+.foot-main-right{
+	position: absolute;
+	left: 71.7%;
+	top: 20%;
+}
+.foot-main-right img:nth-child(1){
+	position: relative;
+	top: -10px;
+}
+.foot-hr{
+	position: absolute;
+	left: 19%;
+	top: 23%;
+}
+.foot-tel{
+	text-align: right;
+	color: #fff;
+	font-size: 20px;
+	font-family: cursive;
+}
+.right-side{
+	width: 70px;
+	height: 420px;
+	background-color: #fff;
+	position: fixed;
+	left: 95%;
+	z-index: 500;
+}
+.side-row{
+	height: 68px;
+	border-bottom: 2px solid #E6E6E6;
+	text-align: center;
+    margin: 0 auto;
+}
+.side-row:nth-child(6){
+	background-color: #FD3A3E;
+}
+.up{
+	opacity: 0.5;
+}
+.side-row img{
+	margin: 10px 20px 5px;
+	cursor: pointer;
+}
+.side-row p{
+	font-family: 微软雅黑;
+	font-size: 14px;
+	cursor: pointer;
+}
+.side-row:nth-child(6) p{
+	color: #fff;
+}
+.side-box{
+	position: relative;
+    width: 245px;
+    left: -246px;
+    top: -62px;
+    background-color: #fff;
+    border: 1px solid rgb(219,29,32);
+    display: none;
+    
+}
+.shop-cart{
+	text-align: left;
+	max-height: 420px;
+  overflow: auto;
+  display: none;
+    
+}
+.cart-row{
+	padding: 5px;
+	border-bottom: 1px dashed #ddd;
+}
+.cart-row-num{
+	padding: 5px;
+}
+.cart-row-num .del-goods{
+	font-size: 14px;
+	color: #ccc;
+	position: relative;
+	left: 26%;
+}
+.shop-cart-submit{
+	overflow: hidden;
+	background-color: #eeeeee;
+}
+.shop-cart-submit img{
+	margin: 0;
+	float: right;
+}
+.goods-num input{
+	width: 20px;
+}
+.goods-price{
+	float: left;
+	margin-top: 2px;
+}
+.num_box{float:left;}  
+.num_box a{width:20px;text-align:center;cursor:pointer;}  
+.num_box a:hover{background:#f0f0f0;}  
+.num_box a:active{background:#E3E3E3;}  
+.num,.num_box a{height:20px;line-height:20px;border-color:#ccc;border-style:solid;color:#333;float:left;}  
+.num{border-width:1px;text-align:left;text-indent:5px;line-height:15px9;padding:0;margin:0;width:100px;}  
+.J_jian{border-width:1px 0 1px 1px;border-radius:3px 0 0 3px;}  
+.J_jia{border-width:1px 1px 1px 0;border-radius:0 3px 3px 0;}
+.history-list{
+	display: block;
+}
+.history-time{
+	color: ;
+	font-family: ;
+	font-size: ;
+	text-align: left;
+}
