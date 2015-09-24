@@ -415,8 +415,8 @@ li{list-style: none;}
 	color: #dc2948;
 	font-weight: bold;
 }
-.goods-right .goods-button{
-	
+.goods-button div{
+	float: left;
 }
 .goods-right .goods-share{
 	
