@@ -248,36 +248,112 @@
 	<div class="main">
 		<div class="main-list">
 			<div class="list-row">
+
 				<div class="row-goods">
-					<img src="images/index_06.png" alt="">
+					<img src="images/index_71.png" alt="">
+					<div class="goods-point">11积分</div>
+					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
+					<div class="goods-bottom">
+						<div class="goods-price">11.50 AED</div>
+						<div class="goods-num-update">
+							<div class="goods-num-update-input">
+								<input type="text" value="1" width="20px">
+							</div>
+							<div class="goods-num-update-updown">
+								<a href="javascript:;" class="g_jia">∧</a>
+								<a href="javascript:;" class="g_jian">∨</a>
+							</div>
+						</div>
+						<div class="add-cart">
+							<a href=""><img src="images/index_16.png" alt=""></a>
+						</div>
+					</div>
 				</div>
+				
 				<div class="row-goods">
-					<img src="images/index_06.png" alt="">
+					<img src="images/index_71.png" alt="">
+					<div class="goods-point">11积分</div>
+					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
+					<div class="goods-bottom">
+						<div class="goods-price">11.50 AED</div>
+						<div class="goods-num-update">
+							<div class="goods-num-update-input">
+								<input type="text" value="1" width="20px">
+							</div>
+							<div class="goods-num-update-updown">
+								<a href="javascript:;" class="g_jia">∧</a>
+								<a href="javascript:;" class="g_jian">∨</a>
+							</div>
+						</div>
+						<div class="add-cart">
+							<a href=""><img src="images/index_16.png" alt=""></a>
+						</div>
+					</div>
 				</div>
+
 				<div class="row-goods">
-					<img src="images/index_06.png" alt="">
+					<img src="images/index_71.png" alt="">
+					<div class="goods-point">11积分</div>
+					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
+					<div class="goods-bottom">
+						<div class="goods-price">11.50 AED</div>
+						<div class="goods-num-update">
+							<div class="goods-num-update-input">
+								<input type="text" value="1" width="20px">
+							</div>
+							<div class="goods-num-update-updown">
+								<a href="javascript:;" class="g_jia">∧</a>
+								<a href="javascript:;" class="g_jian">∨</a>
+							</div>
+						</div>
+						<div class="add-cart">
+							<a href=""><img src="images/index_16.png" alt=""></a>
+						</div>
+					</div>
 				</div>
+
 				<div class="row-goods">
-					<img src="images/index_06.png" alt="">
+					<img src="images/index_71.png" alt="">
+					<div class="goods-point">11积分</div>
+					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
+					<div class="goods-bottom">
+						<div class="goods-price">11.50 AED</div>
+						<div class="goods-num-update">
+							<div class="goods-num-update-input">
+								<input type="text" value="1" width="20px">
+							</div>
+							<div class="goods-num-update-updown">
+								<a href="javascript:;" class="g_jia">∧</a>
+								<a href="javascript:;" class="g_jian">∨</a>
+							</div>
+						</div>
+						<div class="add-cart">
+							<a href=""><img src="images/index_16.png" alt=""></a>
+						</div>
+					</div>
 				</div>
+
 				<div class="row-goods">
-					<img src="images/index_06.png" alt="">
+					<img src="images/index_71.png" alt="">
+					<div class="goods-point">11积分</div>
+					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
+					<div class="goods-bottom">
+						<div class="goods-price">11.50 AED</div>
+						<div class="goods-num-update">
+							<div class="goods-num-update-input">
+								<input type="text" value="1" width="20px">
+							</div>
+							<div class="goods-num-update-updown">
+								<a href="javascript:;" class="g_jia">∧</a>
+								<a href="javascript:;" class="g_jian">∨</a>
+							</div>
+						</div>
+						<div class="add-cart">
+							<a href=""><img src="images/index_16.png" alt=""></a>
+						</div>
+					</div>
 				</div>
-				<div class="row-goods">
-					<img src="images/index_06.png" alt="">
-				</div>
-				<div class="row-goods">
-					<img src="images/index_06.png" alt="">
-				</div>
-				<div class="row-goods">
-					<img src="images/index_06.png" alt="">
-				</div>
-				<div class="row-goods">
-					<img src="images/index_06.png" alt="">
-				</div>
-				<div class="row-goods">
-					<img src="images/index_06.png" alt="">
-				</div>
+			
 			</div>
 			<div class="index-ad">
 				<img src="images/index_32.png" alt="">
@@ -357,6 +433,13 @@
 				zilanmu.hide();
 			}
 		});
+		//商品栏特效
+		$('.row-goods').click(function() {
+			$('.row-goods').css('border','1px solid #fff');
+			$('.row-goods').children('.goods-point').hide();
+			$(this).css('border','1px solid #FA1010');
+			$(this).children('.goods-point').show();
+		});
 		//回到顶部
 		function pageScroll(){
 			window.scrollBy(0,-100); 
@@ -374,41 +457,37 @@
 			}
 		});
 		//数量增减器
-		$(document).ready(function(){  
-			var add,reduce,num,num_txt;  
-			add=$(".J_jia");//添加数量  
-			reduce=$(".J_jian");//减少数量  
-			num="";//数量初始值  
-			num_txt=$(".num");//接受数量的文本框     
-			//var num_val=num_txt.val();//给文本框附上初始值  
+		$('.g_jia').click(function() {
+			var input = $(this).parent('.goods-num-update-updown').parent('.goods-num-update').find('input');
+			var num = input.val();
+			num++;
+			input.val(num);
+		});
+		$('.g_jian').click(function() {
+			var input = $(this).parent('.goods-num-update-updown').parent('.goods-num-update').find('input');
+			var num = input.val();
+			num--;
+			if(num < 1){
+				num = 1;
+			}
+			input.val(num);
+		});
+		$('.J_jia').click(function() {
+			var input = $(this).parent('.num_box').children('label').children('input');
+			var num = input.val();
+			num++;
+			input.val(num);
+		});
 
-			/*添加数量的方法*/  
-			add.click(function(){  
-				num = $(".num").val();      
-				num++;  
-				num_txt.val(num);  
-			 //ajax代码可以放这里传递到数据库实时改变总价  
-			});  
-
-			/*减少数量的方法*/   
-			reduce.click(function(){  
-			//如果文本框的值大于0才执行减去方法  
-				num = $(".num").val();  
-				if(num >0){  
-				  //并且当文本框的值为1的时候，减去后文本框直接清空值，不显示0  
-				  if(num==1)
-				  	{ //num--;
-				  		num_txt.val("1");  
-				  	}  
-				  //否则就执行减减方法  
-				  else  
-				  {  
-				  	num--;  
-				  	num_txt.val(num);  
-				  }  
-				}  
-			});  
-			});
+		$('.J_jian').click(function() {
+			var input = $(this).parent('.num_box').children('label').children('input');
+			var num = input.val();
+			num--;
+			if(num < 1){
+				num = 1;
+			}
+			input.val(num);
+		});
 
 	</script>
 </body>

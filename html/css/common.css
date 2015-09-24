@@ -109,8 +109,66 @@ li{list-style: none;}
 }
 .main-list .list-row .row-goods{
 	float: left;
-	margin-right: 10px;
+	margin-right: 7px;
 	margin-top: 10px;
+	width: 214px;
+	height: 278px;
+	background-color: #fff;
+	border: 1px solid #fff;
+	position: relative;
+}
+.row-goods .goods-point{
+	width: 130px;
+	text-align: center;
+	color: #fff;
+	background-color: #D90F0F;
+	border-radius: 5px;
+	position: absolute;
+	left: 20%;
+	top: 67%;
+	font-family: 微软雅黑;
+	display: none;
+}
+.row-goods img{
+	margin: 7px 7px 0 7px;
+}
+.row-goods p{
+	text-align: center;
+  font-size: 13px;
+  color: #444;
+  font-family: 微软雅黑;
+}
+.goods-bottom{
+	margin: 10px;
+}
+.goods-bottom div{
+	float: left;
+}
+.goods-bottom .goods-price{
+    color: #FA1010;
+    font-weight: bold;
+    font-family: 微软雅黑;
+    margin: 7px 5px 5px 20px;
+}
+.goods-num-update-input input{
+	width: 26px;
+	height: 28px;
+	text-align: center;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+}
+.goods-num-update-updown{
+	width: 16px;
+}
+.goods-num-update-updown a{
+	  float: left;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    font-family: 黑体;
+}
+.goods-bottom .add-cart img{
+	margin:5px;
 }
 .index-ad{
 	padding: 10px 0 0;
