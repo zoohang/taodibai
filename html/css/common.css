@@ -362,3 +362,68 @@ li{list-style: none;}
 	float: right;
 	margin: 10px;
 }
+
+/*goods 详情页面css*/
+
+.goods-info{
+	height: 525px;
+	width: 100%;
+	background-color: #fff;
+}
+.goods-info .url-route{
+	width: 100%;
+
+}
+.goods-info .goods-left{
+	width: 405px;
+	float: left;
+}
+.goods-info .goods-right{
+	margin-left: 20px;
+	float: left;
+}
+.goods-right .goods-name h3{
+	font-family: 微软雅黑;
+}
+.goods-right .goods-attr{
+	width: 660px;
+	height: 105px;
+	background-color: #F7F7F7;
+}
+.goods-attr-col{
+	width: 50%;
+	height: 35px;
+	float: left;
+	line-height: 35px;
+
+}
+.goods-attr-col label{
+  padding-left: 15px;
+  color: #a1a1a1;
+  font-family: 微软雅黑;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.goods-attr-col span{
+	font-size: 18px;
+	color: #000;
+	font-family: 黑体;
+}
+#goods-price-style{
+	font-size: 22px;
+	font-family: 黑体;
+	color: #dc2948;
+	font-weight: bold;
+}
+.goods-right .goods-button{
+	
+}
+.goods-right .goods-share{
+	
+}
+.goods-right .goods-service{
+	
+}
+.goods-right .goods-desc{
+	
+}
