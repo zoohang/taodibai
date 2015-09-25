@@ -51,21 +51,42 @@
 		</div>
 	</div>
 	<!--头部结束-->
+	<link rel="stylesheet" type="text/css" href="css/jqzoom.base.css">
+	<script type="text/javascript" src="js/jquery.jqzoom.js"></script>
+	<script type="text/javascript" src="js/jqzoom.base.js"></script>
 	<div class="main">
 		<div class="main-list">
 
 			<div class="goods-info">
-				<div class="url-route">
+				<div id="url-route">
 					<a href="">小吃零食</a> > <a href="">金冠园 特级酱油 420ml</a>
 				</div>
 				<div class="goods-left">
-					<img src="images/goods_22.png" alt="">
+					<div id="preview" class="spec-preview"> <span class="jqzoom"><img jqimg="images/b1.jpg" src="images/s1.jpg" /></span></div>
+					<div class="spec-scroll"> <a class="prev">&lt;</a> <a class="next">&gt;</a>
+					  <div class="items">
+					    <ul>
+					      <li><img alt="佳能" bimg="images/123.gif" src="images/123.gif" onmousemove="preview(this);"></li>
+					      <li><img alt="佳能" bimg="images/b2.jpg" src="images/s2.jpg" onmousemove="preview(this);"></li>
+					      <li><img alt="佳能" bimg="images/b3.jpg" src="images/s3.jpg" onmousemove="preview(this);"></li>
+					      <li><img alt="佳能" bimg="images/b1.jpg" src="images/s1.jpg" onmousemove="preview(this);"></li>
+					      <li><img alt="佳能" bimg="images/b3.jpg" src="images/s3.jpg" onmousemove="preview(this);"></li>
+					      <li><img alt="佳能" bimg="images/b1.jpg" src="images/s1.jpg" onmousemove="preview(this);"></li>
+					      <li><img alt="佳能" bimg="images/b2.jpg" src="images/s2.jpg" onmousemove="preview(this);"></li>
+					      <li><img alt="佳能" bimg="images/b1.jpg" src="images/s1.jpg" onmousemove="preview(this);"></li>
+					      <li><img alt="佳能" bimg="images/b2.jpg" src="images/s2.jpg" onmousemove="preview(this);"></li>
+					      <li><img alt="佳能" bimg="images/b2.jpg" src="images/s2.jpg" onmousemove="preview(this);"></li>
+					      <li><img alt="佳能" bimg="images/b1.jpg" src="images/s1.jpg" onmousemove="preview(this);"></li>
+					      <li><img alt="佳能" bimg="images/b2.jpg" src="images/s2.jpg" onmousemove="preview(this);"></li>
+					    </ul>
+					  </div>
+					</div>
 				</div>
 				<div class="goods-right">
-					<div class="goods-name">
+					<div class="goods goods-name">
 						<h3>金冠园 特级酱油 420ml</h3>
 					</div>
-					<div class="goods-attr">
+					<div class="goods goods-attr">
 						<div class="goods-attr-col">
 							<label>售价：</label>
 							<span id="goods-price-style">11.50 AED</span>
@@ -83,25 +104,398 @@
 							<span>500g</span>
 						</div>
 						<div class="goods-attr-col">
-							<label>数量：</label>
-							<span>3</span>
+							<label style="float:left;">数量：</label>
+							
+								<p class="num_box" style="margin-top:5px;">
+								<a class="J_jian">-</a>
+								<label><input type="text" class="num" style="width:25px;text-align:center;" value="1"></label>
+								<a class="J_jia">+</a>
+								</p>
+							
 						</div>
 						<div class="goods-attr-col">
 							<label>总价：</label>
 							<span id="goods-price-style">34.50 AED</span>
 						</div>
 					</div>
-					<div class="goods-button">
-						<div id="add-cart"><img src="images/index_09.png" alt="">加入购物车</div>
-						<div id="buy-now">立即购买</div>
-						<div><img src="images/goods_03.png" alt="">收藏此商品</div>
+					<div class="goods goods-button">
+						<a href=""><div id="buy-now">Buy Now</div></a>
+						<a href=""><div id="add-cart">Add Cart</div></a>
+						<a href=""><div id="collect-goods"><img src="images/goods_03.png" alt="">收藏此商品</div></a>
 					</div>
-					<div class="goods-share"></div>
-					<div class="goods-service"></div>
-					<div class="goods-desc"></div>
+					<div class="goods goods-share">
+						<p>分享到朋友圈：<img src="images/goods_07.png" alt=""></p>
+						<p>推荐度：</p>
+					</div>
+					<div class="goods goods-service">
+						
+						<div class="service-ob">
+						<a href="">
+							<img src="images/goods_11.png" alt="">
+							<p>购物赢积分</p>
+							</a>
+						</div>
+					
+						<div class="service-ob">
+							<a href="">
+							<img src="images/goods_14.png" alt="">
+							<p>一小时配送</p>
+							</a>
+						</div>
+						<div class="service-ob">
+							<a href="">
+							<img src="images/goods_16.png" alt="">
+							<p>货到付款</p>
+							</a>
+						</div>
+						<div class="service-ob">
+							<a href="">
+							<img src="images/goods_19.png" alt="">
+							<p>当面验货</p>
+							</a>
+						</div>
+					</div>
+					<div class="goods goods-desc">
+						<h4 style="margin:10px;">简单介绍：</h4>
+						<p>非转基因黄豆 特级酱油 阳光酿造 超级划算非转基因黄豆 特级酱油 阳光酿造 超级划算非转基因黄豆 特级酱油 阳光酿造 超级划算非转基因黄豆 特级酱油 阳光酿造 超级划算非转基因黄豆 特级酱油 阳光酿造 超级划算非转基因黄豆 特级酱油 阳光酿造 超级划算非转基因黄豆 特级酱油 阳光酿造 超级划算</p>
+					</div>
 				</div>
 			</div>
 
+			<!--广告start-->
+			<div class="index-ad">
+				<img src="images/index_32.png" alt="">
+			</div>
+			<!--广告end-->
+
+			<div class="list-row" style="background-color:#fff;">
+				<hr style="border: 2px solid #000;">
+				<p class="tuijianname">
+					<img src="images/goods_21.png" style="margin-bottom: -5px;" alt="">同类产品
+				</p>
+				<div class="row-goods">
+					<img src="images/index_71.png" alt="">
+					<div class="goods-point">11积分</div>
+					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
+					<div class="goods-bottom">
+						<div class="goods-price">11.50 AED</div>
+						<div class="goods-num-update">
+							<div class="goods-num-update-input">
+								<input type="text" value="1" width="20px">
+							</div>
+							<div class="goods-num-update-updown">
+								<a href="javascript:;" class="g_jia">∧</a>
+								<a href="javascript:;" class="g_jian">∨</a>
+							</div>
+						</div>
+						<div class="add-cart">
+							<a href=""><img src="images/index_16.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row-goods">
+					<img src="images/index_71.png" alt="">
+					<div class="goods-point">11积分</div>
+					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
+					<div class="goods-bottom">
+						<div class="goods-price">11.50 AED</div>
+						<div class="goods-num-update">
+							<div class="goods-num-update-input">
+								<input type="text" value="1" width="20px">
+							</div>
+							<div class="goods-num-update-updown">
+								<a href="javascript:;" class="g_jia">∧</a>
+								<a href="javascript:;" class="g_jian">∨</a>
+							</div>
+						</div>
+						<div class="add-cart">
+							<a href=""><img src="images/index_16.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row-goods">
+					<img src="images/index_71.png" alt="">
+					<div class="goods-point">11积分</div>
+					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
+					<div class="goods-bottom">
+						<div class="goods-price">11.50 AED</div>
+						<div class="goods-num-update">
+							<div class="goods-num-update-input">
+								<input type="text" value="1" width="20px">
+							</div>
+							<div class="goods-num-update-updown">
+								<a href="javascript:;" class="g_jia">∧</a>
+								<a href="javascript:;" class="g_jian">∨</a>
+							</div>
+						</div>
+						<div class="add-cart">
+							<a href=""><img src="images/index_16.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row-goods">
+					<img src="images/index_71.png" alt="">
+					<div class="goods-point">11积分</div>
+					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
+					<div class="goods-bottom">
+						<div class="goods-price">11.50 AED</div>
+						<div class="goods-num-update">
+							<div class="goods-num-update-input">
+								<input type="text" value="1" width="20px">
+							</div>
+							<div class="goods-num-update-updown">
+								<a href="javascript:;" class="g_jia">∧</a>
+								<a href="javascript:;" class="g_jian">∨</a>
+							</div>
+						</div>
+						<div class="add-cart">
+							<a href=""><img src="images/index_16.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row-goods">
+					<img src="images/index_71.png" alt="">
+					<div class="goods-point">11积分</div>
+					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
+					<div class="goods-bottom">
+						<div class="goods-price">11.50 AED</div>
+						<div class="goods-num-update">
+							<div class="goods-num-update-input">
+								<input type="text" value="1" width="20px">
+							</div>
+							<div class="goods-num-update-updown">
+								<a href="javascript:;" class="g_jia">∧</a>
+								<a href="javascript:;" class="g_jian">∨</a>
+							</div>
+						</div>
+						<div class="add-cart">
+							<a href=""><img src="images/index_16.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			
+				<p class="tuijianname">
+					<img src="images/goods_21.png" style="margin-bottom: -5px;" alt="">爆款推荐
+				</p>
+				<div class="row-goods">
+					<img src="images/index_71.png" alt="">
+					<div class="goods-point">11积分</div>
+					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
+					<div class="goods-bottom">
+						<div class="goods-price">11.50 AED</div>
+						<div class="goods-num-update">
+							<div class="goods-num-update-input">
+								<input type="text" value="1" width="20px">
+							</div>
+							<div class="goods-num-update-updown">
+								<a href="javascript:;" class="g_jia">∧</a>
+								<a href="javascript:;" class="g_jian">∨</a>
+							</div>
+						</div>
+						<div class="add-cart">
+							<a href=""><img src="images/index_16.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row-goods">
+					<img src="images/index_71.png" alt="">
+					<div class="goods-point">11积分</div>
+					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
+					<div class="goods-bottom">
+						<div class="goods-price">11.50 AED</div>
+						<div class="goods-num-update">
+							<div class="goods-num-update-input">
+								<input type="text" value="1" width="20px">
+							</div>
+							<div class="goods-num-update-updown">
+								<a href="javascript:;" class="g_jia">∧</a>
+								<a href="javascript:;" class="g_jian">∨</a>
+							</div>
+						</div>
+						<div class="add-cart">
+							<a href=""><img src="images/index_16.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row-goods">
+					<img src="images/index_71.png" alt="">
+					<div class="goods-point">11积分</div>
+					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
+					<div class="goods-bottom">
+						<div class="goods-price">11.50 AED</div>
+						<div class="goods-num-update">
+							<div class="goods-num-update-input">
+								<input type="text" value="1" width="20px">
+							</div>
+							<div class="goods-num-update-updown">
+								<a href="javascript:;" class="g_jia">∧</a>
+								<a href="javascript:;" class="g_jian">∨</a>
+							</div>
+						</div>
+						<div class="add-cart">
+							<a href=""><img src="images/index_16.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row-goods">
+					<img src="images/index_71.png" alt="">
+					<div class="goods-point">11积分</div>
+					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
+					<div class="goods-bottom">
+						<div class="goods-price">11.50 AED</div>
+						<div class="goods-num-update">
+							<div class="goods-num-update-input">
+								<input type="text" value="1" width="20px">
+							</div>
+							<div class="goods-num-update-updown">
+								<a href="javascript:;" class="g_jia">∧</a>
+								<a href="javascript:;" class="g_jian">∨</a>
+							</div>
+						</div>
+						<div class="add-cart">
+							<a href=""><img src="images/index_16.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row-goods">
+					<img src="images/index_71.png" alt="">
+					<div class="goods-point">11积分</div>
+					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
+					<div class="goods-bottom">
+						<div class="goods-price">11.50 AED</div>
+						<div class="goods-num-update">
+							<div class="goods-num-update-input">
+								<input type="text" value="1" width="20px">
+							</div>
+							<div class="goods-num-update-updown">
+								<a href="javascript:;" class="g_jia">∧</a>
+								<a href="javascript:;" class="g_jian">∨</a>
+							</div>
+						</div>
+						<div class="add-cart">
+							<a href=""><img src="images/index_16.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+				
+				<p class="tuijianname">
+					<img src="images/goods_21.png" style="margin-bottom: -5px;" alt="">浏览历史
+				</p>
+				<div class="row-goods">
+					<img src="images/index_71.png" alt="">
+					<div class="goods-point">11积分</div>
+					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
+					<div class="goods-bottom">
+						<div class="goods-price">11.50 AED</div>
+						<div class="goods-num-update">
+							<div class="goods-num-update-input">
+								<input type="text" value="1" width="20px">
+							</div>
+							<div class="goods-num-update-updown">
+								<a href="javascript:;" class="g_jia">∧</a>
+								<a href="javascript:;" class="g_jian">∨</a>
+							</div>
+						</div>
+						<div class="add-cart">
+							<a href=""><img src="images/index_16.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row-goods">
+					<img src="images/index_71.png" alt="">
+					<div class="goods-point">11积分</div>
+					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
+					<div class="goods-bottom">
+						<div class="goods-price">11.50 AED</div>
+						<div class="goods-num-update">
+							<div class="goods-num-update-input">
+								<input type="text" value="1" width="20px">
+							</div>
+							<div class="goods-num-update-updown">
+								<a href="javascript:;" class="g_jia">∧</a>
+								<a href="javascript:;" class="g_jian">∨</a>
+							</div>
+						</div>
+						<div class="add-cart">
+							<a href=""><img src="images/index_16.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row-goods">
+					<img src="images/index_71.png" alt="">
+					<div class="goods-point">11积分</div>
+					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
+					<div class="goods-bottom">
+						<div class="goods-price">11.50 AED</div>
+						<div class="goods-num-update">
+							<div class="goods-num-update-input">
+								<input type="text" value="1" width="20px">
+							</div>
+							<div class="goods-num-update-updown">
+								<a href="javascript:;" class="g_jia">∧</a>
+								<a href="javascript:;" class="g_jian">∨</a>
+							</div>
+						</div>
+						<div class="add-cart">
+							<a href=""><img src="images/index_16.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row-goods">
+					<img src="images/index_71.png" alt="">
+					<div class="goods-point">11积分</div>
+					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
+					<div class="goods-bottom">
+						<div class="goods-price">11.50 AED</div>
+						<div class="goods-num-update">
+							<div class="goods-num-update-input">
+								<input type="text" value="1" width="20px">
+							</div>
+							<div class="goods-num-update-updown">
+								<a href="javascript:;" class="g_jia">∧</a>
+								<a href="javascript:;" class="g_jian">∨</a>
+							</div>
+						</div>
+						<div class="add-cart">
+							<a href=""><img src="images/index_16.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row-goods">
+					<img src="images/index_71.png" alt="">
+					<div class="goods-point">11积分</div>
+					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
+					<div class="goods-bottom">
+						<div class="goods-price">11.50 AED</div>
+						<div class="goods-num-update">
+							<div class="goods-num-update-input">
+								<input type="text" value="1" width="20px">
+							</div>
+							<div class="goods-num-update-updown">
+								<a href="javascript:;" class="g_jia">∧</a>
+								<a href="javascript:;" class="g_jian">∨</a>
+							</div>
+						</div>
+						<div class="add-cart">
+							<a href=""><img src="images/index_16.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			
 			<!--广告start-->
 			<div class="index-ad">
 				<img src="images/index_32.png" alt="">
@@ -137,5 +531,13 @@
 	</div>
 	<!--底部结束-->
 	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+	$(function() {
+		$('.row-goods').css('border','1px solid #f00');
+		$('.row-goods').css('margin-top','5px');
+		$('.row-goods').children('.goods-point').show();
+		$('.nav-order').remove();
+	});
+	</script>
 </body>
 </html>

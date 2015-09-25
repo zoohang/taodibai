@@ -31,7 +31,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="nav">
+	<div class="nav" id="nav-bar">
 		<div class="nav-col">
 			<div class="nav-list">
 				<ul>
@@ -53,10 +53,10 @@
 	<!--头部结束-->
 	<div class="right-side">
 		<div class="side-row">
-			<a href="javascript:;">
+			<div class="side-body">
 				<img src="./images/index_09.png" alt="">
 				<p>购物车</p>
-			</a>
+			</div>
 			<div class="side-box shop-cart">
 				<div class="cart-row">
 					<p>小飞燕红油香辣豆干</p>
@@ -164,10 +164,10 @@
 			</div>
 		</div>
 		<div class="side-row">
-			<a href="javascript:;">
+			<div class="side-body">
 				<img src="./images/index_13.png" alt="">
 				<p>历史订单</p>
-			</a>
+			</div>
 			<div class="side-box history-list">
 				<div class="history-row">
 					<p class="history-time">2045.8.9</p>
@@ -202,20 +202,20 @@
 			</div>
 		</div>
 		<div class="side-row">
-			<a href="javascript:;">
+			<div class="side-body">
 				<img src="./images/index_22.png" alt="">
 				<p>公告栏</p>
-			</a>
+			</div>
 			<div class="side-box rs-bar">
 				<h3>今日优惠：</h3>
 				<p>淘迪拜网站今天测试淘迪拜网站今天测试淘迪拜网站今天测试淘迪拜网站今天测试淘迪拜网站今天测试淘迪拜网站今天测试淘迪拜网站今天测试淘迪拜网站今天测试</p>
 			</div>
 		</div>
 		<div class="side-row">
-			<a href="javascript:;">
+			<div class="side-body">
 				<img src="./images/index_25.png" alt="">
 				<p>建议栏</p>
-			</a>
+			</div>
 			<div class="side-box jianyilan">
 				<textarea name="jianyilan">
 					
@@ -227,10 +227,10 @@
 			</div>
 		</div>
 		<div class="side-row">
-			<a href="javascript:;">
+			<div class="side-body">
 				<img src="./images/index_28.png" alt="">
 				<p>分享微信</p>
-			</a>
+			</div>
 			<div class="side-box share-weichat">
 				<h2>分享到微信</h2>
 				<img src="images/index_54.png" alt="">
@@ -424,5 +424,23 @@
 	</div>
 	<!--底部结束-->
 	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript">
+		$(window).scroll(function() {
+
+			var high = document.body.scrollTop;
+			if(high >= 100){
+				$('.nav').css({'position':'fixed','top':0,'z-index':999});
+			}else{
+				$('.nav').css({'position':'static','top':0});
+			}
+		});
+		//商品栏特效
+		$('.row-goods').click(function() {
+			$('.row-goods').css('border','1px solid #fff');
+			$('.row-goods').children('.goods-point').hide();
+			$(this).css('border','1px solid #FA1010');
+			$(this).children('.goods-point').show();
+		});
+	</script>
 </body>
 </html>

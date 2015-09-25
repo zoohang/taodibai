@@ -1,4 +1,4 @@
-$('.side-row a').click(function() {
+$('.side-body').hover(function() {
 			var zilanmu =  $(this).parent().children('.side-box');
 			if(zilanmu.css('display') == 'none'){
 				$('.side-box').hide();
@@ -6,14 +6,10 @@ $('.side-row a').click(function() {
 			}else{
 				zilanmu.hide();
 			}
+		}, function() {
+			zilanmu.hide();
 		});
-		//商品栏特效
-		$('.row-goods').click(function() {
-			$('.row-goods').css('border','1px solid #fff');
-			$('.row-goods').children('.goods-point').hide();
-			$(this).css('border','1px solid #FA1010');
-			$(this).children('.goods-point').show();
-		});
+		
 		//回到顶部
 		function pageScroll(){
 			window.scrollBy(0,-100); 
