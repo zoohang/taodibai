@@ -250,7 +250,7 @@
 			<div class="list-row">
 
 				<div class="row-goods">
-					<img src="images/index_71.png" alt="">
+					<a href=""><img src="images/index_71.png" alt=""></a>
 					<div class="goods-point">11积分</div>
 					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
 					<div class="goods-bottom">
@@ -271,7 +271,7 @@
 				</div>
 				
 				<div class="row-goods">
-					<img src="images/index_71.png" alt="">
+					<a href=""><img src="images/index_71.png" alt=""></a>
 					<div class="goods-point">11积分</div>
 					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
 					<div class="goods-bottom">
@@ -292,7 +292,7 @@
 				</div>
 
 				<div class="row-goods">
-					<img src="images/index_71.png" alt="">
+					<a href=""><img src="images/index_71.png" alt=""></a>
 					<div class="goods-point">11积分</div>
 					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
 					<div class="goods-bottom">
@@ -313,7 +313,7 @@
 				</div>
 
 				<div class="row-goods">
-					<img src="images/index_71.png" alt="">
+					<a href=""><img src="images/index_71.png" alt=""></a>
 					<div class="goods-point">11积分</div>
 					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
 					<div class="goods-bottom">
@@ -334,7 +334,7 @@
 				</div>
 
 				<div class="row-goods">
-					<img src="images/index_71.png" alt="">
+					<a href=""><img src="images/index_71.png" alt=""></a>
 					<div class="goods-point">11积分</div>
 					<a href=""><p>金冠园 特级鲜酱油420毫升</p></a>
 					<div class="goods-bottom">
@@ -435,11 +435,20 @@
 			}
 		});
 		//商品栏特效
-		$('.row-goods').click(function() {
+		/*$('.row-goods').click(function() {
 			$('.row-goods').css('border','1px solid #fff');
 			$('.row-goods').children('.goods-point').hide();
 			$(this).css('border','1px solid #FA1010');
 			$(this).children('.goods-point').show();
+		});*/
+		$('.row-goods').hover(function() {
+			$('.row-goods').css('border','1px solid #fff');
+			$('.row-goods').children('.goods-point').hide();
+			$(this).css('border','1px solid #FA1010');
+			$(this).children('.goods-point').show();
+		},function() {
+			$('.row-goods').css('border','1px solid #fff');
+			$('.row-goods').children('.goods-point').hide();
 		});
 	</script>
 </body>
